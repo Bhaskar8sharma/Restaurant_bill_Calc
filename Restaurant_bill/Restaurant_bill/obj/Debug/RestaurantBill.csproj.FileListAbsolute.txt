@@ -1,0 +1,15 @@
+C:\Users\COOL\Desktop\Restaurant_bill\Restaurant_bill\bin\Debug\Restaurant_bill.exe.config
+C:\Users\COOL\Desktop\Restaurant_bill\Restaurant_bill\bin\Debug\Restaurant_bill.exe
+C:\Users\COOL\Desktop\Restaurant_bill\Restaurant_bill\bin\Debug\Restaurant_bill.pdb
+C:\Users\COOL\Desktop\Restaurant_bill\Restaurant_bill\obj\Debug\MainWindow.g.cs
+C:\Users\COOL\Desktop\Restaurant_bill\Restaurant_bill\obj\Debug\App.g.cs
+C:\Users\COOL\Desktop\Restaurant_bill\Restaurant_bill\obj\Debug\Restaurant_bill_MarkupCompile.cache
+C:\Users\COOL\Desktop\Restaurant_bill\Restaurant_bill\obj\Debug\Restaurant_bill_MarkupCompile.lref
+C:\Users\COOL\Desktop\Restaurant_bill\Restaurant_bill\obj\Debug\MainWindow.baml
+C:\Users\COOL\Desktop\Restaurant_bill\Restaurant_bill\obj\Debug\Restaurant_bill.g.resources
+C:\Users\COOL\Desktop\Restaurant_bill\Restaurant_bill\obj\Debug\Restaurant_bill.Properties.Resources.resources
+C:\Users\COOL\Desktop\Restaurant_bill\Restaurant_bill\obj\Debug\RestaurantBill.csproj.GenerateResource.Cache
+C:\Users\COOL\Desktop\Restaurant_bill\Restaurant_bill\obj\Debug\RestaurantBill.csproj.CoreCompileInputs.cache
+C:\Users\COOL\Desktop\Restaurant_bill\Restaurant_bill\obj\Debug\Restaurant_bill.exe
+C:\Users\COOL\Desktop\Restaurant_bill\Restaurant_bill\obj\Debug\Restaurant_bill.pdb
+C:\Users\COOL\Desktop\Restaurant_bill\Restaurant_bill\obj\Debug\RestaurantBill.csprojResolveAssemblyReference.cache

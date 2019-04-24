@@ -1,0 +1,90 @@
+﻿<Window x:Class="RestaurantBill.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RestaurantBill"
+        mc:Ignorable="d"
+        
+        Title="Menu" Background="Gray" Height="350" Width="525" FontWeight="Bold">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40*"/>
+            <RowDefinition Height="40*"/>
+            <RowDefinition Height="40*"/>
+            <RowDefinition Height="40*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="32*"/>
+            <RowDefinition Height="40*"/>
+            <RowDefinition Height="41*"/>
+            <RowDefinition Height="40*"/>
+
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+
+
+        </Grid.ColumnDefinitions>
+
+        <!-- <TextBlock x:Name="Heading"  Text="Kindly Select your meal and quantity!" HorizontalAlignment="Center" MinWidth="10" FontSize="16" FontWeight="Bold"/>
+-->
+        <Label x:Name="label2" Content="Beverage" Grid.Column="0" Grid.Row="0" 
+               HorizontalAlignment="Left"  VerticalAlignment="Top"
+              FontSize="25" />
+
+        <ComboBox x:Name="BeverageCombo"  Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="1"  Margin="0,0,49.2,0">
+        </ComboBox>
+
+        <Label x:Name="txtblk1" Content="Appetizer"  Grid.Column="0" Grid.Row="2" 
+                    FontSize="25" Grid.ColumnSpan="2" Margin="0,0,129.2,0" />
+        <ComboBox x:Name="myCombobox1" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="3" Margin="0,0,49.2,0"/>
+
+        <Label x:Name="label3" Content="Main Course" Grid.Column="1" Grid.Row="0" Grid.ColumnSpan="3" FontSize="25" Margin="129.4,0,0.4,0"/>
+
+        <ComboBox x:Name="MainCourse" Grid.Column="2" Grid.ColumnSpan="2" Grid.Row="1" Margin="9.8,0,49.4,0">
+            <ComboBoxItem>Seafood Alfredo $15.95</ComboBoxItem>
+            <ComboBoxItem IsSelected="True">Chicken Alfredo $13.95</ComboBoxItem>
+            <ComboBoxItem>Chicken Picatta $13.95</ComboBoxItem>
+            <ComboBoxItem>Turkey Club $11.95</ComboBoxItem>
+            <ComboBoxItem>Lobster Pie $18.95</ComboBoxItem>
+            <ComboBoxItem>Prime Rib $20.95</ComboBoxItem>
+            <ComboBoxItem>Shrimp Scampi $18.95</ComboBoxItem>
+            <ComboBoxItem>Turkey Dinner $13.95</ComboBoxItem>
+            <ComboBoxItem>Stuffed Chicken $14.95</ComboBoxItem>
+        </ComboBox>
+
+        <Label x:Name="label4" Content="Dessert" Grid.Column="1" Grid.Row="2" FontSize="25" RenderTransformOrigin="-0.881,0.505" Grid.ColumnSpan="3" Margin="129.4,0,0.4,0"/>
+        <ComboBox x:Name="Dessert" Grid.Column="1" Grid.ColumnSpan="3" Grid.Row="3" Margin="129.4,0,49.4,0" >
+            <ComboBoxItem IsSelected="True">Apple Pie $5.95</ComboBoxItem>
+            <ComboBoxItem>Sundae $3.95</ComboBoxItem>
+            <ComboBoxItem>Carrot Cake $5.95</ComboBoxItem>
+            <ComboBoxItem>Mud Pie $4.95</ComboBoxItem>
+            <ComboBoxItem>Apple Crisp $5.95</ComboBoxItem>
+        </ComboBox>
+        <DataGrid x:Name="Ordergrid" AutoGenerateColumns="False" Grid.ColumnSpan="4" Grid.Row="6" Grid.RowSpan="3" Margin="0,0,0.4,39.8" >
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Name" Binding="{Binding Path=Name}"/>
+                <DataGridTextColumn Header="Price" Binding="{Binding Path=Price}"/>
+                <DataGridTextColumn Header="Quantity" Binding="{Binding Path=quantity,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <DataGrid x:Name="total" Grid.Column="1" Grid.Row="6" Grid.ColumnSpan="2" Grid.RowSpan="3" Margin="10.4,0,119.8,-0.2">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Total" IsReadOnly="True" Binding="{Binding Path=total, UpdateSourceTrigger=PropertyChanged}"></DataGridTextColumn>
+                </DataGrid.Columns>
+        </DataGrid>
+        <StatusBar Grid.Column="0" Grid.Row="8" Grid.ColumnSpan="4" Margin="0,0.2,0.4,-0.2">
+            <StatusBarItem>
+                <Label Content="Bhaskar Sharma"/>
+            </StatusBarItem>
+            <StatusBarItem>
+                <Button Height="40" Width="146" HorizontalAlignment="Right" Click="Button_Click">
+                    <Image Source=".\Images\CenntialCollegeIcon.jpg" HorizontalAlignment="Right"/>
+                </Button>
+            </StatusBarItem>
+        </StatusBar>
+    </Grid>
+</Window>
